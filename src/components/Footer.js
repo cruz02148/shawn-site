@@ -4,8 +4,9 @@ const Footer = () => {
   return (
     <footer>
       <div className='footer_address'>
-        <p>915 Commonwealth Ave</p>
-        <p>Boston, MA 02115</p>
+        <p>303 Wyman Street</p>
+        <p>Suite 300</p>
+        <p>Waltham, MA 02451</p>
       </div>
       <p><a href="tel:617-306-2955">617-306-2955</a></p>
       <p><a href="mailto:shawn.zhu@mcadamfa.com">shawn.zhu@mcadamfa.com</a></p>

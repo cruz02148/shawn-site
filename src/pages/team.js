@@ -25,14 +25,22 @@ const TeamPage = () => {
   return (
     <React.Fragment>
       <Header />
-      <div>
+      <div className='team_container'>
         <TeamMemeber
           avatar={testAvatar}
           name="Shawn Zhu"
-          phoneNumber="(123)-456-7890"
+          phoneNumber="(781)-228-1036"
           email="shawn@birchfp.com"
           linkedInProfile="https://www.linkedin.com/in/shawn-zhu-4304b592"
           responsibilities={shawnResponsibilities}
+        />
+        <TeamMemeber
+          avatar={testAvatar}
+          name="Gregory Hughes"
+          phoneNumber="(123)-456-7890"
+          email="greg@birchfp.com"
+          linkedInProfile="https://www.linkedin.com/in/gregory-hughes-16665625"
+          responsibilities={gregResponsibilities}
         />
       </div>
       <Footer />

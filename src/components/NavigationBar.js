@@ -10,29 +10,40 @@ const NavigationBar = () => {
       <Nav.Item>
         <Link to="/team">Our Team</Link>
       </Nav.Item>
-      <NavDropdown title='Our Services' id='nav-dropdown'>
+      <NavDropdown title='Our Services' id='nav-dropdown-services'>
         <NavDropdown.Item>
-          <Link to='/services'>Financial Planning</Link>
+          <Link to='/financial_planning'>Financial Planning</Link>
         </NavDropdown.Item>
         <NavDropdown.Item>
-          <Link to='/services'>Risk Management</Link>
+          <Link to='/risk_management'>Risk Management</Link>
         </NavDropdown.Item>
         <NavDropdown.Item>
-          <Link to='/services'>Wealth Management</Link>
+          <Link to='/wealth_management'>Wealth Management</Link>
         </NavDropdown.Item>
         <NavDropdown.Item>
-          <Link to='/services'>Estate Planning</Link>
+          <Link to='/estate_planning'>Estate Planning</Link>
         </NavDropdown.Item>
       </NavDropdown>
       <Nav.Item>
         <Link to="/process">Our Process</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link to="/contact">Contact Us</Link>
+        <Link to="/values">Our Values</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link to="/portal">Client Portals</Link>
+        <Link to="/contact">Contact Us</Link>
       </Nav.Item>
+      <NavDropdown title='Third Party Portals' id='nav-dropdown-portals'>
+        <NavDropdown.Item href='https://www.schwab.com/public/schwab/nn/login/login.html?seg=sac&lang=en'>
+          Client Portal
+        </NavDropdown.Item>
+        <NavDropdown.Item href='https://login.orionadvisor.com/login.html?s=portal&p=/portfolio/overview'>
+          Orion Portal
+        </NavDropdown.Item>
+        <NavDropdown.Item href='https://brokercheck.finra.org/'>
+          Broker Check
+        </NavDropdown.Item>
+      </NavDropdown>
     </Nav>
   )
 }

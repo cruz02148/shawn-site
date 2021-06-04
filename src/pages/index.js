@@ -1,14 +1,10 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button'
 
 import '../styles/index.scss'
 
 // components
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-
-// assets
-import heroImage from '../images/home_hero.jpg'
 
 const IndexPage = () => {
   return (

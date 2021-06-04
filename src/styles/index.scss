@@ -72,6 +72,7 @@ body, html {
 
 // Footer
 footer {
+  margin-top: 16px;
   text-align: center;
 }
 
@@ -81,4 +82,85 @@ footer {
   p {
     margin-bottom: 0;
   }
+}
+
+// Team Page
+.team_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.team_member {
+  flex: 1;
+  margin: 24px;
+  width: 35%;
+
+  &__card {
+    background-color: $light;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &__image {
+    height: 300px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  &__info--container {
+    padding: 16px;
+  }
+
+  &__linkedin {
+    height: 24px;
+  }
+
+  &__title {
+    color: grey;
+  }
+}
+
+// Process Page
+.process-container {
+  margin: 24px 48px;
+}
+
+.process-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+
+  li {
+    list-style: none;
+
+  }
+}
+
+.process-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  &__items-list {
+    padding-left: 8px;
+  }
+}
+
+// Service Pages
+.services-container {
+  background-color: $light;
+  display: flex;
+  padding: 24px 48px;
+}
+
+.services-text-container {
+  padding-right: 16px;
+}
+
+.service-image {
+  width: 50%; // Desktop
+}
+
+// Contact Us
+.contact-us-container {
+  width: 100%;
 }
