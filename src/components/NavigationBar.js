@@ -33,17 +33,15 @@ const NavigationBar = () => {
       <Nav.Item>
         <Link to="/contact">Contact Us</Link>
       </Nav.Item>
-      <NavDropdown title='Third Party Portals' id='nav-dropdown-portals'>
-        <NavDropdown.Item href='https://www.schwab.com/public/schwab/nn/login/login.html?seg=sac&lang=en'>
-          Client Portal
-        </NavDropdown.Item>
-        <NavDropdown.Item href='https://login.orionadvisor.com/login.html?s=portal&p=/portfolio/overview'>
-          Orion Portal
-        </NavDropdown.Item>
-        <NavDropdown.Item href='https://brokercheck.finra.org/'>
-          Broker Check
-        </NavDropdown.Item>
-      </NavDropdown>
+      <Nav.Item>
+        <Link href='https://www.schwab.com/public/schwab/nn/login/login.html?seg=sac&lang=en'>Client Portal</Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Link href='https://login.orionadvisor.com/login.html?s=portal&p=/portfolio/overview'>Orion Portal</Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Link href='https://brokercheck.finra.org/'>Broker Check</Link>
+      </Nav.Item>
     </Nav>
   )
 }

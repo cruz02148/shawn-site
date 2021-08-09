@@ -37,7 +37,7 @@ const TeamPage = () => {
         <TeamMemeber
           avatar={testAvatar}
           name="Gregory Hughes"
-          phoneNumber="(123)-456-7890"
+          phoneNumber="(603)-714-4766"
           email="greg@birchfp.com"
           linkedInProfile="https://www.linkedin.com/in/gregory-hughes-16665625"
           responsibilities={gregResponsibilities}

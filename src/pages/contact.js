@@ -42,7 +42,7 @@ const EstatePlanningPage = () => {
       <Header />
       <div className='services-container'>
         <div className='services-text-container'>
-          <h2>Requst an Appointment</h2>
+          <h2>Request an Appointment</h2>
           <p>In as little as 15 minutes we can get to know you – your situation, goals and needs – then connect
           you with an advisor committed to helping you pursue true wealth.</p>
         </div>

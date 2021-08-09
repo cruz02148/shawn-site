@@ -1,5 +1,6 @@
 import React from 'react'
 
+import '@fontsource/open-sans'
 import '../styles/index.scss'
 
 // components

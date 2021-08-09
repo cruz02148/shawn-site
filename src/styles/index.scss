@@ -6,6 +6,8 @@ $black: #0E131F;
 $light: #F5F0F6;
 
 body, html {
+  background-color: $light;
+  font-family: "Open Sans";
   height: 100%;
 }
 
@@ -70,9 +72,18 @@ body, html {
   }
 }
 
+.dropdown-menu {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+a.dropdown-item {
+  padding: 8px 16px;
+}
+
 // Footer
 footer {
-  margin-top: 16px;
+  padding-top: 16px;
   text-align: center;
 }
 
