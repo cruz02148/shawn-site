@@ -11,6 +11,7 @@ const RiskManagementPage = () => {
     <React.Fragment>
       <Header />
       <div className='services-container'>
+        <img className='service-image' src={riskMgmtImage} alt='risk management' />
         <div className='services-text-container'>
           <h1>Risk Management</h1>
           <p>Protecting yourself and loved ones against unexpected events is a fundamental aspect of a well
@@ -23,7 +24,6 @@ const RiskManagementPage = () => {
             <li>Long term care insurance</li>
           </ul>
         </div>
-        <img className='service-image' src={riskMgmtImage} alt='risk management' />
       </div>
       <Footer />
     </React.Fragment>

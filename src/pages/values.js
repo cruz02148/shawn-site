@@ -11,6 +11,7 @@ const OurValuesPage = () => {
     <React.Fragment>
       <Header />
       <div className='services-container'>
+        <img className='service-image' src={valuesImage} alt='our values' />
         <div className='services-text-container'>
           <h1>Our Values</h1>
           <p>Our independence is your advantage. We believe having an open architecture
@@ -23,7 +24,6 @@ const OurValuesPage = () => {
             <li>Follow a disciplined investment process</li>
           </ul>
         </div>
-        <img className='service-image' src={valuesImage} alt='our values' />
       </div>
       <Footer />
     </React.Fragment>

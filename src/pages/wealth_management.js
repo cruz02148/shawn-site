@@ -11,6 +11,7 @@ const WealthManagementPage = () => {
     <React.Fragment>
       <Header />
       <div className='services-container'>
+        <img className='service-image' src={wealthMgmtImage} alt='wealth management' />
         <div className='services-text-container'>
           <h1>Wealth Management</h1>
           <p>Based on our clients’ financial plan, we create a systematic and disciplined approach to
@@ -23,7 +24,6 @@ const WealthManagementPage = () => {
             <li>Downside protection</li>
           </ul>
         </div>
-        <img className='service-image' src={wealthMgmtImage} alt='wealth management' />
       </div>
       <Footer />
     </React.Fragment>

@@ -11,6 +11,7 @@ const FinancialPlanningPage = () => {
     <React.Fragment>
       <Header />
       <div className='services-container'>
+        <img className='service-image' src={financialPlanningImage} alt='financial planning' />
         <div className='services-text-container'>
           <h1>Financial Planning</h1>
           <p>We believe a personalized blueprint should be the foundation of every financial decision.
@@ -26,7 +27,6 @@ const FinancialPlanningPage = () => {
             <li>Pension maximation</li>
           </ul>
         </div>
-        <img className='service-image' src={financialPlanningImage} alt='financial planning' />
       </div>
       <Footer />
     </React.Fragment>

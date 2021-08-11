@@ -11,6 +11,7 @@ const EstatePlanningPage = () => {
     <React.Fragment>
       <Header />
       <div className='services-container'>
+        <img className='service-image' src={estatePlanningImage} alt='estate planning' />
         <div className='services-text-container'>
           <h1>Estate Planning</h1>
           <p>We want to help our clients build the legacy that they envisioned - preserving wealth between
@@ -24,7 +25,6 @@ const EstatePlanningPage = () => {
             <li>Domestic partner planning</li>
           </ul>
         </div>
-        <img className='service-image' src={estatePlanningImage} alt='estate planning' />
       </div>
       <Footer />
     </React.Fragment>
