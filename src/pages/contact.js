@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { navigate } from 'gatsby-link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSquarePhone } from '@fortawesome/free-solid-svg-icons'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 
@@ -12,7 +14,7 @@ function encode(data) {
     .join('&')
 }
 
-const EstatePlanningPage = () => {
+const ContactPage = () => {
   const [state, setState] = useState({})
 
   const handleChange = (e) => {
@@ -45,6 +47,7 @@ const EstatePlanningPage = () => {
           <h2>Request an Appointment</h2>
           <p>In as little as 15 minutes we can get to know you – your situation, goals and needs – then connect
           you with an advisor committed to helping you pursue true wealth.</p>
+          <FontAwesomeIcon icon={faSquarePhone} />
         </div>
         <form
           action='/'
@@ -95,4 +98,4 @@ const EstatePlanningPage = () => {
   )
 }
 
-export default EstatePlanningPage
+export default ContactPage

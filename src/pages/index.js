@@ -6,11 +6,13 @@ import '../styles/index.scss'
 // components
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import NavigationBar from '../components/NavigationBar'
 
 const IndexPage = () => {
   return (
     <React.Fragment>
       <Header/>
+      <NavigationBar />
       <div className='hero_image'>
         <div className='hero_text'>
           <p>Life is short - Let us focus on the financials while you focus on the things you love</p>

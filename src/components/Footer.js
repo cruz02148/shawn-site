@@ -9,7 +9,7 @@ const Footer = () => {
         <p>Waltham, MA 02451</p>
       </div>
       <p><a href="tel:617-306-2955">617-306-2955</a></p>
-      <p><a href="mailto:shawn.zhu@mcadamfa.com">shawn.zhu@mcadamfa.com</a></p>
+      <p><a href="mailto:advisory@birchfp.com">advisory@birchfp.com</a></p>
       <small>
       &copy; 2021 Birch Financial Partners
       McAdam LLC dba Birch Financial Partners is an SEC registered investment adviser that maintains a principal place of business in the State of Pennsylvania. The Firm may only
