@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar, faLayerGroup, faSitemap, faArrowTrendUp } from '@fortawesome/free-solid-svg-icons'
 
-import '@fontsource/open-sans'
+import '@fontsource/barlow'
 import '../styles/index.scss'
 
 // components

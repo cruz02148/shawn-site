@@ -8,9 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby'
 
-// assets
-import testLogo from '../images/logo.png'
-
 const Header = () => {
   return (
     <div className='header' id='page-top'>
