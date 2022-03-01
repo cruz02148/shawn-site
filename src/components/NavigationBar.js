@@ -1,49 +1,53 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+import Navbar from 'react-bootstrap/Navbar'
 
 import { Link } from 'gatsby'
 
 const NavigationBar = () => {
+  useEffect(() => {
+    const navBar = document.getElementById('navBar')
+
+    const scrollHandler = () => {
+      if (window.scrollY > 90) {
+        navBar.classList.add('nav-sticky')
+      } else {
+        navBar.classList.remove('nav-sticky')
+      }
+    }
+
+    window.addEventListener("scroll", scrollHandler);
+    
+    // Return effect cleanup function to remove listener
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, [])
+
   return (
-    <Nav variant="pills" activeKey='1'>
-      <Nav.Item>
-        <Link to="/team">Our Team</Link>
-      </Nav.Item>
-      <NavDropdown title='Our Services' id='nav-dropdown-services'>
-        <NavDropdown.Item>
-          <Link to='/financial_planning'>Financial Planning</Link>
-        </NavDropdown.Item>
-        <NavDropdown.Item>
-          <Link to='/risk_management'>Risk Management</Link>
-        </NavDropdown.Item>
-        <NavDropdown.Item>
-          <Link to='/wealth_management'>Wealth Management</Link>
-        </NavDropdown.Item>
-        <NavDropdown.Item>
-          <Link to='/estate_planning'>Estate Planning</Link>
-        </NavDropdown.Item>
-      </NavDropdown>
-      <Nav.Item>
-        <Link to="/process">Our Process</Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Link to="/values">Our Values</Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Link to="/contact">Contact Us</Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Link href='https://www.schwab.com/public/schwab/nn/login/login.html?seg=sac&lang=en'>Client Portal</Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Link href='https://login.orionadvisor.com/login.html?s=portal&p=/portfolio/overview'>Orion Portal</Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Link href='https://brokercheck.finra.org/'>Broker Check</Link>
-      </Nav.Item>
-    </Nav>
+    <div className='nav-bar' id='navBar'>
+      <Container>
+        <Navbar bg='dark' expand='lg' variant='dark'>
+          <a className='navbar-brand' href='#page-top'>MENU</a>
+          <Navbar.Toggle aria-controls='navbarCollapse' />
+          <Navbar.Collapse className='justify-content-between' id='navbarCollapse'>
+            <Nav className='mr-auto'>
+              <Link className='nav-item nav-link' to="/">Home</Link>
+              <Link className='nav-item nav-link' to="/team">Our Team</Link>
+              <Link className='nav-item nav-link' to="/services">Services</Link>
+              <Link className='nav-item nav-link' to="/values">Our Values</Link>
+              <a className='nav-item nav-link' href='https://www.schwab.com/public/schwab/nn/login/login.html?seg=sac&lang=en'>Client Portal</a>
+              <a className='nav-item nav-link' href='https://login.orionadvisor.com/login.html?s=portal&p=/portfolio/overview'>Orion Portal</a>
+              <a className='nav-item nav-link' href='https://brokercheck.finra.org/'>Broker Check</a>
+            </Nav>
+            <div className='ml-auto'>
+              <Link className='btn btn-custom' to='/contact'>Contact Us</Link>
+            </div>
+          </Navbar.Collapse>
+        </Navbar>
+      </Container>
+    </div>
   )
 }
-
 export default NavigationBar
