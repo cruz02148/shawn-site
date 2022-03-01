@@ -37,9 +37,9 @@ const NavigationBar = () => {
               <Link className='nav-item nav-link' to="/team">Our Team</Link>
               <Link className='nav-item nav-link' to="/services">Services</Link>
               <Link className='nav-item nav-link' to="/values">Our Values</Link>
-              <Link className='nav-item nav-link' href='https://www.schwab.com/public/schwab/nn/login/login.html?seg=sac&lang=en'>Client Portal</Link>
-              <Link className='nav-item nav-link' href='https://login.orionadvisor.com/login.html?s=portal&p=/portfolio/overview'>Orion Portal</Link>
-              <Link className='nav-item nav-link' href='https://brokercheck.finra.org/'>Broker Check</Link>
+              <a className='nav-item nav-link' href='https://www.schwab.com/public/schwab/nn/login/login.html?seg=sac&lang=en'>Client Portal</a>
+              <a className='nav-item nav-link' href='https://login.orionadvisor.com/login.html?s=portal&p=/portfolio/overview'>Orion Portal</a>
+              <a className='nav-item nav-link' href='https://brokercheck.finra.org/'>Broker Check</a>
             </Nav>
             <div className='ml-auto'>
               <Link className='btn btn-custom' to='/contact'>Contact Us</Link>
