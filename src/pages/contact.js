@@ -81,7 +81,6 @@ const ContactPage = () => {
               <div className='contact-form'>
                 <form
                   action='/'
-                  className='contact-us-container'
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
                   name='contact'
