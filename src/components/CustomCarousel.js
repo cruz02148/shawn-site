@@ -7,7 +7,7 @@ import paperworkImage from '../images/paperwork.jpg'
 import valuesImage from '../images/our_values.jpg'
 
 const CustomCarousel = () => (
-  <Carousel interval={5000}>
+  <Carousel interval={5000} pause={false}>
     <Carousel.Item>
       <img
         alt='estate planning carousel'
