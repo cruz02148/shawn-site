@@ -29,7 +29,7 @@ const Header = () => {
                   </div>
                   <div className='header-text'>
                     <h3>Call Us</h3>
-                    <p>781 228 1036</p>
+                    <p>(781) 228-1036</p>
                   </div>
                 </div>
               </Col>

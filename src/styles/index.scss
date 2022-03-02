@@ -20,7 +20,7 @@ $screen-lg: 992px;
 /********* General CSS *********/
 /*******************************/
 body {
-  color: #444444;
+  color: $color1;
   font-weight: 400;
   background: #ffffff;
   font-family: 'Barlow', sans-serif;
@@ -78,41 +78,6 @@ a:focus {
   max-width: 1366px;
 }
 
-// body, html {
-//   background-color: $light;
-//   font-family: "Open Sans";
-//   height: 100%;
-// }
-
-// Homepage
-.hero_image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/home_hero.jpg');
-
-  /* Set a specific height */
-  // height: 450px;
-  height: 600px;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero_text {
-  border: 1px solid $gray;
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-  padding: 24px 16px;
-  text-align: center;
-  position: absolute;
-  top: 30%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
 /**********************************/
 /********** Header CSS ***********/
 /**********************************/
@@ -137,6 +102,10 @@ a:focus {
   font-weight: 800;
   letter-spacing: 1px;
   font-style: italic;
+
+  @media screen and (max-width: $screen-mobile) {
+    font-size: 32px;
+  }
 }
 
 .header .logo a {
@@ -268,6 +237,10 @@ a:focus {
   .nav-bar .navbar-brand {
     display: none;
   }
+
+  #contactUsNavItem {
+    display: none;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -306,10 +279,10 @@ a:focus {
   position: relative;
   width: 100%;
   min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: column;
 }
 
 .carousel .carousel-img {
@@ -322,16 +295,16 @@ a:focus {
   overflow: hidden;
 }
 
-.carousel .carousel-img::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, .5);
-  z-index: 1;
-}
+// .carousel .carousel-img::after {
+//   position: absolute;
+//   content: "";
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   background: rgba(0, 0, 0, .5);
+//   z-index: 1;
+// }
 
 .carousel .carousel-img img {
   width: 100%;
@@ -344,6 +317,8 @@ a:focus {
   max-width: 992px;
   padding: 0 15px;
   text-align: center;
+  top: 40%;
+  left: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -371,62 +346,53 @@ a:focus {
 .carousel .carousel-text p {
   max-width: 500px;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 36px;
   margin-bottom: 40px;
 }
 
-.carousel .btn.btn-custom {
-  padding: 20px 45px 22px 45px;
-  color: #ffffff;
-}
+// .carousel .owl-nav {
+//   position: absolute;
+//   width: 100%;
+//   height: 50px;
+//   top: calc(50% - 25px);
+//   left: 0;
+//   display: flex;
+//   justify-content: space-between;
+//   z-index: 9;
+// }
 
-.carousel .btn.btn-custom:hover {
-  color: $color2;
-}
+// .carousel .carousel-control-next-icon,
+// .carousel .carousel-control-prev-icon {
+//   width: 50px;
+//   height: 50px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: #ffffff;
+//   border-radius: 50px;
+//   background: rgba(256, 256, 256, .2);
+//   font-size: 22px;
+//   transition: .5s;
+// }
 
-.carousel .owl-nav {
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  top: calc(50% - 25px);
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  z-index: 9;
-}
+// .carousel .owl-nav .owl-prev {
+//   margin-left: 30px;
+// }
 
-.carousel .owl-nav .owl-prev,
-.carousel .owl-nav .owl-next {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  border-radius: 50px;
-  background: rgba(256, 256, 256, .2);
-  font-size: 22px;
-  transition: .5s;
-}
+// .carousel .owl-nav .owl-next {
+//   margin-right: 30px;
+// }
 
-.carousel .owl-nav .owl-prev {
-  margin-left: 30px;
-}
+// .carousel .carousel-control-next-icon:hover,
+// .carousel .carousel-control-prev-icon:hover {
+//   color: #ffffff;
+//   background: $color2;
+// }
 
-.carousel .owl-nav .owl-next {
-  margin-right: 30px;
-}
-
-.carousel .owl-nav .owl-prev:hover,
-.carousel .owl-nav .owl-next:hover {
-  color: #ffffff;
-  background: $color2;
-}
-
-.carousel .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-}
+// .carousel .animated {
+//   -webkit-animation-duration: 1s;
+//   animation-duration: 1s;
+// }
 
 @media (max-width: 991.98px) {
   .carousel .carousel-text h3 {
@@ -524,7 +490,7 @@ a:focus {
 }
 
 .process .process-item h3 {
-  color: $color5;
+  color: $color2;
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
@@ -539,10 +505,12 @@ a:focus {
 .process .process-item ul {
   margin: 0;
   padding: 0;
+  padding-left: 5rem;
   margin-bottom: 25px;
 }
 
 .process .process-item ul li {
+  list-style: none;
   margin-bottom: 5px;
 }
 
@@ -708,6 +676,15 @@ a:focus {
   color: $color1;
 }
 
+.team .team-item ul li {
+  list-style: none;
+}
+
+.team .team-item ul li svg {
+  margin-right: 8px;
+  color: $color2;
+}
+
 /*******************************/
 /********* Services CSS *********/
 /*******************************/
@@ -726,7 +703,7 @@ a:focus {
 }
 
 .service .service-item svg {
-  color: $color1;
+  color: $color1; // change so it goes from $color2 at the top to $color1 at the bottom
   font-size: 60px;
   line-height: 75px;
   margin-bottom: 20px;
@@ -743,7 +720,7 @@ a:focus {
 }
 
 .service .service-item h3 {
-  color: $color5;
+  color: $color2;
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
@@ -762,10 +739,19 @@ a:focus {
 }
 
 .service .service-item ul li {
+  list-style: none;
   margin-bottom: 5px;
 }
 
 .service .service-item ul li i {
+  margin-right: 8px;
+  color: $color2;
+}
+
+.service .service-item ul li svg {
+  font-size: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
   margin-right: 8px;
   color: $color2;
 }
@@ -808,6 +794,11 @@ a:focus {
 .values .values-content ul li i {
   margin-right: 8px;
   color: $color1;
+}
+
+.values .values-content ul li svg {
+  margin-right: 8px;
+  color: $color2;
 }
 
 /*******************************/
@@ -914,13 +905,13 @@ a:focus {
 .footer {
   position: relative;
   margin-top: 32px;
-  padding-top: 90px;
   background: $color1;
 }
 
 .footer .footer-contact {
   position: relative;
   margin-bottom: 45px;
+  margin-top: 60px;
   color: #ffffff;
 }
 
@@ -936,154 +927,29 @@ a:focus {
   margin-right: 20px;
 }
 
+.footer .footer-contact h4 {
+  color: $color3;
+  margin-bottom: 16px;
+  margin-left: 32px;
+}
+
 .footer .footer-contact p i {
   width: 25px;
 }
 
+.footer .contact-address-city {
+  display: block;
+  margin-left: 32px;
+}
+
 .footer-disclosure {
   color: #fff;
+  font-size: 12px;
+  margin-top: 60px;
 }
 
-// Team Page
-.team_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  @media screen and (max-width: $screen-mobile) {
-    flex-direction: column;
+@media screen and (max-width: 991.98px) {
+  .footer .footer-contact, .footer-disclosure {
+    margin-top: 0px;
   }
-}
-
-.team_member {
-  flex: 1;
-  margin: 24px;
-  width: 35%;
-
-  @media screen and (max-width: $screen-mobile) {
-    margin: 24px 0;
-    padding: 0 16px;
-    width: 100%;
-  }
-
-  &__card {
-    background-color: $light;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  &__image {
-    height: 300px;
-    margin-bottom: 24px;
-    width: 100%;
-  }
-
-  &__info--container {
-    padding: 16px;
-  }
-
-  &__linkedin {
-    height: 24px;
-  }
-
-  &__title {
-    color: grey;
-  }
-}
-
-// Process Page
-// .process-container {
-//   margin: 24px 48px;
-// }
-
-// .process-list {
-//   display: flex;
-//   flex-direction: column;
-//   padding: 0;
-
-//   li {
-//     display: flex;
-//     list-style: none;
-//   }
-// }
-
-// .process-item {
-//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-//   margin-bottom: 32px;
-//   // padding: 16px 24px;
-
-//   &:nth-child(odd) {
-//     background-color: $light-green;
-//   }
-
-//   &:nth-child(even) {
-//     background-color: $black;
-
-//     li, .process-item__title {
-//       color: $light;
-//     }
-//   }
-
-//   &__title {
-//     font-size: 24px;
-//     font-weight: bold;
-//   }
-
-//   &__number-container {
-//     background-color: $light;
-//     // border-radius: 100%;
-//     flex: 1;
-//     padding: 16px 24px;
-//     text-align: center;
-
-//     p {
-//       color: $black;
-//       font-size: 64px;
-//     }
-//   }
-
-//   &__items-container {
-//     flex: 7;
-//     padding: 16px 24px;
-//   }
-
-//   &__items-list {
-//     padding-left: 8px;
-//   }
-// }
-
-// Services Pages
-.services-container {
-  background-color: $light;
-  display: flex;
-  padding: 24px 48px;
-
-  @media screen and (max-width: $screen-mobile) {
-    flex-direction: column;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-.services-text-container {
-  padding-left: 16px;
-
-  @media screen and (max-width: $screen-mobile) {
-    padding-left: 0;
-    margin-top: 16px;
-  }
-}
-
-.service-image {
-  border-top-left-radius: 20%;
-  border-bottom-right-radius: 20%;
-  width: 50%; // Desktop
-
-  @media screen and (max-width: $screen-mobile) {
-    width: 100%;
-  }
-}
-
-// Contact Us
-.contact-us-container {
-  width: 100%;
 }

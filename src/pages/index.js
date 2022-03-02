@@ -3,38 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar, faLayerGroup, faSitemap, faArrowTrendUp } from '@fortawesome/free-solid-svg-icons'
 
 import '@fontsource/barlow'
+import '@fontsource/barlow/500.css'
+import '@fontsource/barlow/600.css'
+import '@fontsource/barlow/700.css'
+import '@fontsource/barlow/800.css'
 import '../styles/index.scss'
 
 // components
-// import Carousel from 'react-bootstrap/Carousel'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
+import CustomCarousel from '../components/CustomCarousel'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import NavigationBar from '../components/NavigationBar'
 import Row from 'react-bootstrap/Row'
-
-// assets
-import estatePlanningImage from '../images/estate_planning.jpg'
-// import paperworkImage from '../images/paperwork.jpg'
-// import valuesImage from '../images/our_values.jpg'
-
-const CustomCarousel = () => (
-  <div className='carousel'>
-    <div className='carousel-inner'>
-      <div className='carousel-item'>
-        <img
-          alt='estate planning carousel'
-          className='carousel-img'
-          src={estatePlanningImage}
-        />
-        <div className='carousel-text'>
-          <p>Life is short - Let us focus on the financials while you focus on the things you love. Our mission is to establish a relationship-driven practice that provides comprehensive and personalized advisory services. We strive to become a trusted financial partner for our clients in pursuit of their lifetime goals</p>
-        </div>
-      </div>
-    </div>
-  </div>
-)
 
 const Process = () => (
   <div className='process'>

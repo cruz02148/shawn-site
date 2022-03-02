@@ -25,7 +25,8 @@ const Footer = () => {
             <div className='footer-contact'>
               <p>
                 <FontAwesomeIcon icon={faLocationDot} />
-                303 Wyman St, Ste 300, Waltham, MA 02451
+                303 Wyman St, Ste 300
+                <span className='contact-address-city'>Waltham MA 02451</span>
               </p>
               <p>
                 <FontAwesomeIcon icon={faPhoneAlt} />

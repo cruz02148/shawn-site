@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faCheckCircle } from '@fortawesome/free-regular-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 
@@ -79,9 +80,10 @@ const TeamPage = () => {
             </Col>
             <Col lg={3} md={6}>
               <div className='team-item'>
-                <h3>Responsibilities:</h3>
                 <ul>
-                  {shawnResponsibilities.map(item => <li>{item}</li>)}
+                  {shawnResponsibilities.map(item => {
+                    return <li><FontAwesomeIcon icon={faCheckCircle} />{item}</li>
+                  })}
                 </ul>
               </div>
             </Col>
@@ -107,7 +109,6 @@ const TeamPage = () => {
             </Col>
             <Col lg={3} md={6}>
               <div className='team-item'>
-                <h3>Responsibilities:</h3>
                 <ul>
                   {gregResponsibilities.map(item => <li>{item}</li>)}
                 </ul>
