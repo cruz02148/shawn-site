@@ -20,7 +20,7 @@ $screen-lg: 992px;
 /********* General CSS *********/
 /*******************************/
 body {
-  color: #444444;
+  color: $color1;
   font-weight: 400;
   background: #ffffff;
   font-family: 'Barlow', sans-serif;
@@ -137,6 +137,10 @@ a:focus {
   font-weight: 800;
   letter-spacing: 1px;
   font-style: italic;
+
+  @media screen and (max-width: $screen-mobile) {
+    font-size: 32px;
+  }
 }
 
 .header .logo a {
@@ -266,6 +270,10 @@ a:focus {
 
 @media (min-width: $screen-lg) {
   .nav-bar .navbar-brand {
+    display: none;
+  }
+
+  #contactUsNavItem {
     display: none;
   }
 }
@@ -524,13 +532,23 @@ a:focus {
 }
 
 .process .process-item h3 {
-  color: $color5;
+  color: $color2;
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   text-align: center;
 }
+
+// .process .process-item h3::after {
+//   position: absolute;
+//   content: "";
+//   width: 50%;
+//   height: 2px;
+//   left: 25%;
+//   bottom: 0;
+//   background: $color2;
+// }
 
 .process .process-item p {
   margin: 0;
@@ -539,10 +557,12 @@ a:focus {
 .process .process-item ul {
   margin: 0;
   padding: 0;
+  padding-left: 5rem;
   margin-bottom: 25px;
 }
 
 .process .process-item ul li {
+  list-style: none;
   margin-bottom: 5px;
 }
 
@@ -708,6 +728,15 @@ a:focus {
   color: $color1;
 }
 
+.team .team-item ul li {
+  list-style: none;
+}
+
+.team .team-item ul li svg {
+  margin-right: 8px;
+  color: $color2;
+}
+
 /*******************************/
 /********* Services CSS *********/
 /*******************************/
@@ -726,7 +755,7 @@ a:focus {
 }
 
 .service .service-item svg {
-  color: $color1;
+  color: $color1; // change so it goes from $color2 at the top to $color1 at the bottom
   font-size: 60px;
   line-height: 75px;
   margin-bottom: 20px;
@@ -743,7 +772,7 @@ a:focus {
 }
 
 .service .service-item h3 {
-  color: $color5;
+  color: $color2;
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
@@ -762,10 +791,19 @@ a:focus {
 }
 
 .service .service-item ul li {
+  list-style: none;
   margin-bottom: 5px;
 }
 
 .service .service-item ul li i {
+  margin-right: 8px;
+  color: $color2;
+}
+
+.service .service-item ul li svg {
+  font-size: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
   margin-right: 8px;
   color: $color2;
 }
@@ -808,6 +846,11 @@ a:focus {
 .values .values-content ul li i {
   margin-right: 8px;
   color: $color1;
+}
+
+.values .values-content ul li svg {
+  margin-right: 8px;
+  color: $color2;
 }
 
 /*******************************/
@@ -914,13 +957,13 @@ a:focus {
 .footer {
   position: relative;
   margin-top: 32px;
-  padding-top: 90px;
   background: $color1;
 }
 
 .footer .footer-contact {
   position: relative;
   margin-bottom: 45px;
+  margin-top: 60px;
   color: #ffffff;
 }
 
@@ -936,12 +979,30 @@ a:focus {
   margin-right: 20px;
 }
 
+.footer .footer-contact h4 {
+  color: $color3;
+  margin-bottom: 16px;
+  margin-left: 32px;
+}
+
 .footer .footer-contact p i {
   width: 25px;
 }
 
+.footer .contact-address-city {
+  margin-left: 32px;
+}
+
 .footer-disclosure {
   color: #fff;
+  font-size: 12px;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 991.98px) {
+  .footer .footer-contact, .footer-disclosure {
+    margin-top: 0px;
+  }
 }
 
 // Team Page
@@ -989,67 +1050,6 @@ a:focus {
     color: grey;
   }
 }
-
-// Process Page
-// .process-container {
-//   margin: 24px 48px;
-// }
-
-// .process-list {
-//   display: flex;
-//   flex-direction: column;
-//   padding: 0;
-
-//   li {
-//     display: flex;
-//     list-style: none;
-//   }
-// }
-
-// .process-item {
-//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-//   margin-bottom: 32px;
-//   // padding: 16px 24px;
-
-//   &:nth-child(odd) {
-//     background-color: $light-green;
-//   }
-
-//   &:nth-child(even) {
-//     background-color: $black;
-
-//     li, .process-item__title {
-//       color: $light;
-//     }
-//   }
-
-//   &__title {
-//     font-size: 24px;
-//     font-weight: bold;
-//   }
-
-//   &__number-container {
-//     background-color: $light;
-//     // border-radius: 100%;
-//     flex: 1;
-//     padding: 16px 24px;
-//     text-align: center;
-
-//     p {
-//       color: $black;
-//       font-size: 64px;
-//     }
-//   }
-
-//   &__items-container {
-//     flex: 7;
-//     padding: 16px 24px;
-//   }
-
-//   &__items-list {
-//     padding-left: 8px;
-//   }
-// }
 
 // Services Pages
 .services-container {

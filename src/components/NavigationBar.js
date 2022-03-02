@@ -40,6 +40,7 @@ const NavigationBar = () => {
               <a className='nav-item nav-link' href='https://www.schwab.com/public/schwab/nn/login/login.html?seg=sac&lang=en'>Client Portal</a>
               <a className='nav-item nav-link' href='https://login.orionadvisor.com/login.html?s=portal&p=/portfolio/overview'>Orion Portal</a>
               <a className='nav-item nav-link' href='https://brokercheck.finra.org/'>Broker Check</a>
+              <Link className='nav-item nav-link' id='contactUsNavItem' to='/contact'>Contact Us</Link>
             </Nav>
             <div className='ml-auto'>
               <Link className='btn btn-custom' to='/contact'>Contact Us</Link>

@@ -3,6 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar, faLayerGroup, faSitemap, faArrowTrendUp } from '@fortawesome/free-solid-svg-icons'
 
 import '@fontsource/barlow'
+import '@fontsource/barlow/500.css'
+import '@fontsource/barlow/600.css'
+import '@fontsource/barlow/700.css'
+import '@fontsource/barlow/800.css'
 import '../styles/index.scss'
 
 // components
