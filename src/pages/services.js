@@ -44,7 +44,7 @@ const Services = () => {
             <Col lg={6} md={6}>
               <div className='service-item'>
                 <FontAwesomeIcon icon={faUmbrella} />
-                <h3>Wealth Management</h3>
+                <h3>Risk Management</h3>
                 <p>Protecting yourself and loved ones against unexpected events is a fundamental aspect of a well
                 designed financial plan. This key process includes identifying, analyzing, and
                 finding solutions for potential risks. Some of the tools we use are:</p>
@@ -59,7 +59,7 @@ const Services = () => {
             <Col lg={6} md={6}>
               <div className='service-item'>
                 <FontAwesomeIcon icon={faCoins} />
-                <h3>Risk Management</h3>
+                <h3>Wealth Management</h3>
                 <p>Based on our clients’ financial plan, we create a systematic and disciplined approach to
                 help grow, maintain, and protect their portfolios. Our strategies include:</p>
                 <ul>

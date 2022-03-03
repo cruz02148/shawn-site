@@ -26,7 +26,7 @@ const OurValuesPage = () => {
               </div>
             </Col>
             <Col lg={6}>
-              <div className='section-header text-left'>
+              <div className='section-header'>
                 <p>We Work for You</p>
                 <h2>Our Values</h2>
               </div>
