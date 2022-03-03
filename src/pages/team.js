@@ -54,8 +54,8 @@ const TeamPage = () => {
       <div className='team'>
         <Container>
           <div className='section-header text-center'>
-            <p>Meet Our Team</p>
-            <h2>Our Financial Advisors</h2>
+            <p>Our Founders</p>
+            <h2>Meet Our Team</h2>
           </div>
           <Row>
             <Col lg={3} md={6}>
@@ -65,7 +65,7 @@ const TeamPage = () => {
                 </div>
                 <div className='team-text'>
                   <h2>Shawn Zhu</h2>
-                  <p>Co-Founder & Advisor</p>
+                  <p>Co-Founder</p>
                   <p className='sub-text'>Financial Advisor since 2012</p>
                   <div className='team-social'>
                     <a href='https://www.linkedin.com/in/shawn-zhu-4304b592'>
@@ -99,7 +99,7 @@ const TeamPage = () => {
                 </div>
                 <div className='team-text'>
                   <h2>Gregory Hughes</h2>
-                  <p>Co-Founder & Advisor</p>
+                  <p>Co-Founder</p>
                   <p className='sub-text'>Financial Advisor since 2012</p>
                   <div className='team-social'>
                     <a href='https://www.linkedin.com/in/gregory-hughes-16665625'>

@@ -14,7 +14,7 @@ const Header = () => {
     <div className='header' id='page-top'>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Birch Financial</title>
+        <title>Birch Financial Partners</title>
       </Helmet>
       <Container>
         <Row className='align-items-center'>
