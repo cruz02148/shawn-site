@@ -82,7 +82,12 @@ const TeamPage = () => {
               <div className='team-item'>
                 <ul>
                   {shawnResponsibilities.map(item => {
-                    return <li><FontAwesomeIcon icon={faCheckCircle} />{item}</li>
+                    return (
+                      <li>
+                        <FontAwesomeIcon icon={faCheckCircle} />
+                        <p>{item}</p>
+                      </li>
+                    )
                   })}
                 </ul>
               </div>
@@ -110,7 +115,14 @@ const TeamPage = () => {
             <Col lg={3} md={6}>
               <div className='team-item'>
                 <ul>
-                  {gregResponsibilities.map(item => <li>{item}</li>)}
+                {gregResponsibilities.map(item => {
+                    return (
+                      <li>
+                        <FontAwesomeIcon icon={faCheckCircle} />
+                        <p>{item}</p>
+                      </li>
+                    )
+                  })}
                 </ul>
               </div>
             </Col>

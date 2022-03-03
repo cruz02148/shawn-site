@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 // components
 import Container from 'react-bootstrap/Container'
@@ -11,6 +12,10 @@ import { Link } from 'gatsby'
 const Header = () => {
   return (
     <div className='header' id='page-top'>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Birch Financial</title>
+      </Helmet>
       <Container>
         <Row className='align-items-center'>
           <Col lg={6} md={12}>
