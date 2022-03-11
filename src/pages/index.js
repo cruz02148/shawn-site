@@ -7,6 +7,7 @@ import '@fontsource/barlow/500.css'
 import '@fontsource/barlow/600.css'
 import '@fontsource/barlow/700.css'
 import '@fontsource/barlow/800.css'
+import '@fontsource/alegreya'
 import '../styles/index.scss'
 
 // components

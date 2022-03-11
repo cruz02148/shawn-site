@@ -12,7 +12,8 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import NavigationBar from '../components/NavigationBar'
 
-import testAvatar from '../images/example_avatar.jpeg'
+import gregAvatar from '../images/greg_pic.png'
+import shawnAvatar from '../images/shawn_pic.png'
 
 const shawnResponsibilities = [
   'Develop personal and working relationships with clients',
@@ -28,24 +29,7 @@ const gregResponsibilities = [
   'Monitor and rebalance accounts',
   'Maintain relationships with partnered financial companies'
 ]
-/*
-<TeamMemeber
-  avatar={testAvatar}
-  name="Shawn Zhu"
-  phoneNumber="(781)-228-1036"
-  email="shawn@birchfp.com"
-  linkedInProfile="https://www.linkedin.com/in/shawn-zhu-4304b592"
-  responsibilities={shawnResponsibilities}
-/>
-<TeamMemeber
-  avatar={testAvatar}
-  name="Gregory Hughes"
-  phoneNumber="(603)-714-4766"
-  email="greg@birchfp.com"
-  linkedInProfile="https://www.linkedin.com/in/gregory-hughes-16665625"
-  responsibilities={gregResponsibilities}
-/>
-*/
+
 const TeamPage = () => {
   return (
     <React.Fragment>
@@ -54,18 +38,18 @@ const TeamPage = () => {
       <div className='team'>
         <Container>
           <div className='section-header text-center'>
-            <p>Meet Our Team</p>
-            <h2>Our Financial Advisors</h2>
+            <p>Our Founders</p>
+            <h2>Meet Our Team</h2>
           </div>
           <Row>
             <Col lg={3} md={6}>
               <div className='team-item'>
                 <div className='team-img'>
-                  <img alt='shawn profile' src={testAvatar} />
+                  <img alt='shawn profile' src={shawnAvatar} />
                 </div>
                 <div className='team-text'>
                   <h2>Shawn Zhu</h2>
-                  <p>Co-Founder & Advisor</p>
+                  <p>Co-Founder</p>
                   <p className='sub-text'>Financial Advisor since 2012</p>
                   <div className='team-social'>
                     <a href='https://www.linkedin.com/in/shawn-zhu-4304b592'>
@@ -95,11 +79,11 @@ const TeamPage = () => {
             <Col lg={3} md={6}>
               <div className='team-item'>
                 <div className='team-img'>
-                  <img alt='greg profile' src={testAvatar} />
+                  <img alt='greg profile' src={gregAvatar} />
                 </div>
                 <div className='team-text'>
                   <h2>Gregory Hughes</h2>
-                  <p>Co-Founder & Advisor</p>
+                  <p>Co-Founder</p>
                   <p className='sub-text'>Financial Advisor since 2012</p>
                   <div className='team-social'>
                     <a href='https://www.linkedin.com/in/gregory-hughes-16665625'>
