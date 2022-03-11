@@ -12,7 +12,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import NavigationBar from '../components/NavigationBar'
 
-import gregAvatar from '../images/greg_pic.jpg'
+import gregAvatar from '../images/greg_pic.png'
 import shawnAvatar from '../images/shawn_pic.png'
 
 const shawnResponsibilities = [
