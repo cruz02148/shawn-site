@@ -40,7 +40,8 @@ const Footer = () => {
           </Col>
           <Col lg={6}>
           <p className='footer-disclosure'>
-            &copy; 2021 Birch Financial Partners
+            &copy; 2021 Birch Financial Partners<br />
+            We are supported by McAdam LLC. McAdam is an independent financial advisory firm with a nationwide network of hundreds of advisors operating out of four offices in Philadelphia, Chicago, Boston, and Tysons Corner.
             McAdam LLC dba Birch Financial Partners is an SEC registered investment adviser that maintains a principal place of business in the State of Pennsylvania. The Firm may only
             transact business in those states in which it is notice filed or qualifies for a corresponding exemption from such requirements. For information about Mcadam LLC Dba Birch
             Financial Partners registration status and business operations, please consult the Firm’s Form ADV disclosure documents, the most recent versions of which are available on the

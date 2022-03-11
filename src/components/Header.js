@@ -9,6 +9,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby'
 
+// assets
+import logoImage from '../images/logo_green.png'
+
 const Header = () => {
   return (
     <div className='header' id='page-top'>
@@ -21,6 +24,7 @@ const Header = () => {
           <Col lg={6} md={12}>
             <div className='logo'>
               <Link to='/'>
+                <img alt='logo' src={logoImage} />
                 <h1>Birch Financial Partners</h1>
               </Link>
             </div>

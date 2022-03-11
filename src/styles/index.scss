@@ -97,18 +97,20 @@ a:focus {
 .header .logo h1 {
   margin: -4px 0 0 0;
   color: $color2;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 50px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  font-style: italic;
+  font-family: 'Alegreya', 'Barlow', sans-serif;
+  margin-left: 16px;
+  text-transform: uppercase;
 
   @media screen and (max-width: $screen-mobile) {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 
 .header .logo a {
+  align-items: center;
+  display: flex;
   text-decoration: none;
 }
 
@@ -565,6 +567,7 @@ a:focus {
 }
 
 .team .team-img img {
+  max-height: 200px;
   width: 100%;
   transition: .3s;
 }
