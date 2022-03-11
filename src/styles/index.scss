@@ -106,7 +106,8 @@ a:focus {
   text-transform: uppercase;
 
   @media screen and (max-width: $screen-mobile) {
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 36px;
   }
 }
 
