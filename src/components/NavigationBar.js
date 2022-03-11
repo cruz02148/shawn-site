@@ -29,7 +29,7 @@ const NavigationBar = () => {
     <div className='nav-bar' id='navBar'>
       <Container>
         <Navbar bg='dark' expand='lg' variant='dark'>
-          <a className='navbar-brand' href='#page-top'>MENU</a>
+          <a className='navbar-brand' href='#page-top'>Menu</a>
           <Navbar.Toggle aria-controls='navbarCollapse' />
           <Navbar.Collapse className='justify-content-between' id='navbarCollapse'>
             <Nav className='mr-auto'>

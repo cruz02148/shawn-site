@@ -14,7 +14,9 @@ $color5: #380949;
 
 // Breakpoint
 $screen-mobile: 480px;
+$screen-mobile-sm: 390px;
 $screen-lg: 992px;
+$tablet-sm: 768px;
 
 /*******************************/
 /********* General CSS *********/
@@ -235,6 +237,10 @@ a:focus {
   box-shadow: inset 200px 0 0 0 $color3;
 }
 
+a.navbar-brand {
+  font-weight: 500;
+}
+
 @media (min-width: $screen-lg) {
   .nav-bar .navbar-brand {
     display: none;
@@ -302,16 +308,66 @@ a:focus {
 
 .carousel .carousel-text {
   position: absolute;
-  max-width: 992px;
+  max-width: 250px;
   padding: 0px;
   text-align: center;
   top: 25%;
-  left: 18%;
+  left: 17%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   z-index: 2;
+
+  @media screen and (min-width: $screen-mobile-sm) {
+    left: 18%;
+  }
+
+  @media screen and (min-width: 400px) {
+    left: 18%;
+  }
+
+  @media screen and (min-width: 412px) {
+    left: 19%;
+  }
+
+  @media screen and (min-width: $screen-mobile) {
+    left: 21%;
+    max-width: 300px;
+  }
+
+  @media screen and (min-width: $tablet-sm) {
+    max-width: 400px;
+    left: 24%;
+    top: 29%;
+  }
+
+  @media screen and (min-width: 875px) {
+    left: 27%;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    top: 25%;
+    max-width: 650px;
+    left: 18%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 23%;
+  }
+
+  @media screen and (min-width: 1368px) {
+    left: 27%;
+  }
+
+  @media screen and (min-width: 1680px) {
+    left: 29%;
+  }
+
+  @media screen and (min-width: 2560px) {
+    left: 35%;
+    top: 27%;
+  }
 }
 
 .carousel .carousel-text h3 {
@@ -455,8 +511,8 @@ a:focus {
 .process .process-item ul {
   margin: 0;
   padding: 0;
-  padding-left: 5rem;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .process .process-item ul li {
